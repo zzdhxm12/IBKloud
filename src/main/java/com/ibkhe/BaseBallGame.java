@@ -1,10 +1,7 @@
 package com.ibkhe;
 
 public class BaseBallGame {
-    public static void main(String[] args) {
-        int[] given = {1,2,3};
-        int[] input = {3,2,1};
-
+    public String getScore(int[] given, int[] input){
         int bcnt = 0;
         int scnt = 0;
 
@@ -19,9 +16,9 @@ public class BaseBallGame {
         }
 
         if(scnt==0 && bcnt==0) {
-            System.out.println("null");
+            return("null");
         }else {
-            System.out.println((scnt>0?scnt+"S":"")+(bcnt>0?bcnt+"B":""));
+            return((scnt>0?scnt+"S":"")+(bcnt>0?bcnt+"B":""));
         }
     }
 }
